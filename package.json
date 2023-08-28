@@ -9,14 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
+    "@stitches/react": "^1.2.8",
     "@types/node": "20.5.7",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "axios": "^1.5.0",
+    "dayjs": "^1.11.9",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "framer-motion": "^10.16.1",
+    "html-react-parser": "^4.2.1",
     "next": "13.4.19",
+    "next-seo": "^6.1.0",
+    "next-sitemap": "^4.2.2",
+    "nprogress": "^0.2.0",
+    "popmotion": "^11.0.5",
     "react": "18.2.0",
+    "react-content-loader": "^6.2.1",
     "react-dom": "18.2.0",
+    "react-headroom": "^3.2.1",
+    "storyblok-js-client": "^6.0.0",
+    "storyblok-rich-text-react-renderer": "^2.9.0",
+    "styled-components": "^6.0.7",
     "typescript": "5.2.2"
   }
 }
