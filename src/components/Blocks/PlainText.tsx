@@ -1,7 +1,7 @@
-import { Container, Text } from 'UI'
-import { PlainTextStoryblok } from 'common/types'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import { styled } from 'lib/style'
+import { Container, Text } from '../../UI'
+import { PlainTextStoryblok } from '../../common/types'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
+import { styled } from '../../lib/style'
 
 type PlainTextProps = {
   block: PlainTextStoryblok

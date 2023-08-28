@@ -1,9 +1,9 @@
 import NextImage from 'next/image'
 
-import { Container } from 'UI'
-import { MediaStoryblok } from 'common/types'
-import { getImageAttributes } from 'common/utils/content'
-import { styled } from 'lib/style'
+import { Container } from '../../UI'
+import { MediaStoryblok } from '../../common/types'
+import { getImageAttributes } from '../../common/utils/content'
+import { styled } from '../../lib/style'
 
 type MediaProps = {
   block: MediaStoryblok

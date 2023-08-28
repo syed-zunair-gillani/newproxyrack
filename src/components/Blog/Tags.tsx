@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 
-import { Box, Tab, Tabs, Text } from 'UI'
-import { TagsType } from 'pages/blog'
+import { Box, Tab, Tabs, Text } from '../../UI'
+import { TagsType } from '../../pages/blog'
 
 type TagsProps = {
   tags?: TagsType[]

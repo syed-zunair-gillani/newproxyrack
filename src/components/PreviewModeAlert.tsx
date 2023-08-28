@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/dist/client/router'
 import { useState, useEffect } from 'react'
 
-import { Box, Button, Card, Flex, Link, Text, Theme } from 'UI'
+import { Box, Button, Card, Flex, Link, Text, Theme } from '../UI'
 import {
   LIVE_VERSION,
   PREVIEW_COPIED,
@@ -10,8 +10,8 @@ import {
   PREVIEW_MESSAGE,
   PREVIEW_MESSAGE_SECOND,
   PREVIEW_MODE,
-} from 'common/constants'
-import { copyStringToClipboard } from 'common/utils/clipboard'
+} from '../common/constants'
+import { copyStringToClipboard } from '../common/utils/clipboard'
 
 export const PreviewModeAlert = (): JSX.Element => {
   const [expanded, setExpanded] = useState(false)

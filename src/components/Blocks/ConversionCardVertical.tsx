@@ -1,6 +1,6 @@
-import { Container, Theme } from 'UI'
-import { ConversionCardVerticalStoryblok } from 'common/types'
-import { styled } from 'lib/style'
+import { Container, Theme } from '../../UI'
+import { ConversionCardVerticalStoryblok } from '../../common/types'
+import { styled } from '../../lib/style'
 
 import { ConversionCardContent } from './ConversionCardContent'
 

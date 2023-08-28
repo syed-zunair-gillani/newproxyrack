@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { Container, Text } from 'UI'
-import { PreFooterStoryblok } from 'common/types'
-import { ButtonBlock } from 'components/Blocks/ButtonBlock'
-import { styled } from 'lib/style'
+import { Container, Text } from '../../UI'
+import { PreFooterStoryblok } from '../../common/types'
+import { ButtonBlock } from '../../components/Blocks/ButtonBlock'
+import { styled } from '../../lib/style'
 
 import { CMSLink } from './CMSLink'
 

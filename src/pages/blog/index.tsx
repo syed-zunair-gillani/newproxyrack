@@ -4,30 +4,30 @@ import { useRouter } from 'next/router'
 import { useCallback, useEffect, useState } from 'react'
 import { StoryData } from 'storyblok-js-client'
 
-import { Box, Container, Text } from 'UI'
+import { Box, Container, Text } from '../../UI'
 import {
   BLOG_ERROR,
   DEFAULT_BLOG_SEO_OG_TITLE,
   POST_PER_PAGE,
   PROXYRACK,
   SITE_ORIGIN,
-} from 'common/constants'
+} from '../../common/constants'
 import {
   BlogPostStoryblok,
   FooterStoryblok,
   NavbarStoryblok,
   PageStoryblok,
   PreFooterStoryblok,
-} from 'common/types'
-import { Pagination } from 'components/Blog/Pagination'
-import Posts from 'components/Blog/Posts'
-import Tags from 'components/Blog/Tags'
-import Footer from 'components/Shared/Footer'
-import FooterMobile from 'components/Shared/FooterMobile'
-import Navbar from 'components/Shared/Navbar/Navbar'
-import NavbarMobile from 'components/Shared/Navbar/NavbarMobile'
-import Prefooter from 'components/Shared/Prefooter'
-import { Storyblok } from 'lib/storyblok'
+} from '../../common/types'
+import { Pagination } from '../../components/Blog/Pagination'
+import Posts from '../../components/Blog/Posts'
+import Tags from '../../components/Blog/Tags'
+import Footer from '../../components/Shared/Footer'
+import FooterMobile from '../../components/Shared/FooterMobile'
+import Navbar from '../../components/Shared/Navbar/Navbar'
+import NavbarMobile from '../../components/Shared/Navbar/NavbarMobile'
+import Prefooter from '../../components/Shared/Prefooter'
+import { Storyblok } from '../../lib/storyblok'
 
 const RESOLVE_RELATIONS = ['page.navbar', 'page.pre_footer', 'page.footer']
 
@@ -49,7 +49,7 @@ const BlogIndexPage = (props: BlogIndexPageProps): JSX.Element => {
   const { isPreview, push, query } = useRouter()
 
   const [posts, setPosts] = useState(props.posts)
-  const [total, setTotal] = useState(props.total)
+  const [total, setTotal] = useState<any>(props.total)
   const [error, setError] = useState(false)
   const [loading, setLoading] = useState(false)
 

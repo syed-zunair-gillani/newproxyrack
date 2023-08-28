@@ -1,7 +1,7 @@
-import { Box, Container, Text } from 'UI'
-import { InfoRowStoryblok } from 'common/types'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import { styled } from 'lib/style'
+import { Box, Container, Text } from '../../UI'
+import { InfoRowStoryblok } from '../../common/types'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
+import { styled } from '../../lib/style'
 
 import { Editable } from './Editable'
 

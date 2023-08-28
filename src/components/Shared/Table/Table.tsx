@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Table as StyledTable, Thead, Tbody, Th, Tr, Td } from 'UI'
+import { Table as StyledTable, Thead, Tbody, Th, Tr, Td } from '../../../UI'
 
 type TableProps<K extends PropertyKey, T extends Array<Record<K, string>>> = {
   thead: Readonly<Array<keyof T[0]>>

@@ -1,8 +1,8 @@
-import { Card, Container, Divider, Flex, Stack, Text } from 'UI'
-import { PricingCardSmallStoryblok } from 'common/types'
-import { CMSLink } from 'components/Shared/CMSLink'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import { styled } from 'lib/style'
+import { Card, Container, Divider, Flex, Stack, Text } from '../../../UI'
+import { PricingCardSmallStoryblok } from '../../../common/types'
+import { CMSLink } from '../../../components/Shared/CMSLink'
+import { CMSRichTextField } from '../../../components/Shared/CMSRichTextField'
+import { styled } from '../../../lib/style'
 
 import { ButtonBlock } from '../ButtonBlock'
 import { Editable } from '../Editable'

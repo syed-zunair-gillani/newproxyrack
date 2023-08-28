@@ -1,7 +1,7 @@
-import { Container, Theme } from 'UI'
-import { TableStoryblok } from 'common/types'
-import { Table } from 'components/Shared/Table/Table'
-import { styled } from 'lib/style'
+import { Container, Theme } from '../../UI'
+import { TableStoryblok } from '../../common/types'
+import { Table } from '../../components/Shared/Table/Table'
+import { styled } from '../../lib/style'
 
 type PropsTypes = {
   block: TableStoryblok

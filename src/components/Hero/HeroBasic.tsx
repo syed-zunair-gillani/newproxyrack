@@ -1,11 +1,11 @@
-import { Box, Container, Text } from 'UI'
-import { NavbarStoryblok, PageStoryblok } from 'common/types'
-import { ButtonBlock } from 'components/Blocks/ButtonBlock'
-import { CMSLink } from 'components/Shared/CMSLink'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import Navbar from 'components/Shared/Navbar/Navbar'
-import NavbarMobile from 'components/Shared/Navbar/NavbarMobile'
-import { styled } from 'lib/style'
+import { Box, Container, Text } from '../../UI'
+import { NavbarStoryblok, PageStoryblok } from '../../common/types'
+import { ButtonBlock } from '../../components/Blocks/ButtonBlock'
+import { CMSLink } from '../../components/Shared/CMSLink'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
+import Navbar from '../../components/Shared/Navbar/Navbar'
+import NavbarMobile from '../../components/Shared/Navbar/NavbarMobile'
+import { styled } from '../../lib/style'
 
 type HeroBasicProps = {
   content: PageStoryblok['hero']

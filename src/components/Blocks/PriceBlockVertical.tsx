@@ -12,7 +12,7 @@ import {
   Stack,
   Tag,
   Text,
-} from 'UI'
+} from '../../UI'
 import {
   CONTACT,
   PRICE_CUSTOM,
@@ -23,12 +23,12 @@ import {
   PRICE_VERTICAL_MONTH,
   PRICE_VERTICAL_YEAR,
   VIP_EMAIL,
-} from 'common/constants'
-import { PricingStoryblok } from 'common/types'
-import { formatedPrice, formatedPriceCost } from 'common/utils/currency'
-import { CMSLink } from 'components/Shared/CMSLink'
-import { useWindowSize } from 'components/utils'
-import { styled } from 'lib/style'
+} from '../../common/constants'
+import { PricingStoryblok } from '../../common/types'
+import { formatedPrice, formatedPriceCost } from '../../common/utils/currency'
+import { CMSLink } from '../../components/Shared/CMSLink'
+import { useWindowSize } from '../../components/utils'
+import { styled } from '../../lib/style'
 
 import { ButtonBlock } from './ButtonBlock'
 import { Editable } from './Editable'
@@ -139,7 +139,7 @@ export const PriceBlockVertical = ({
             transform: `translateX(-${slideWidth * slideIndex}px)`,
           }}
         >
-          {price?.content?.plans.map((plan) => {
+          {price?.content?.plans.map((plan:any) => {
             const costPrice = plan.trial
               ? ''
               : handleCostPerUnit(
@@ -230,7 +230,7 @@ export const PriceBlockVertical = ({
                       }}
                     >
                       <StyledStack>
-                        {plan?.features?.map((features) => {
+                        {plan?.features?.map((features:any) => {
                           return (
                             <Editable key={features} block={features}>
                               <StyledFlex

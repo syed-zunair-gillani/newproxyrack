@@ -1,8 +1,8 @@
 import dayjs from 'dayjs'
 import React from 'react'
 
-import { Flex, Tag, Text } from 'UI'
-import { styled } from 'lib/style'
+import { Flex, Tag, Text } from '../../UI'
+import { styled } from '../../lib/style'
 
 type BlogHeaderProps = {
   title: string

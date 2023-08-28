@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 
-import { Container } from 'UI'
-import { styled } from 'lib/style'
+import { Container } from '../../UI'
+import { styled } from '../../lib/style'
 
-export const HorizontalScroll: React.FC = ({
+export const HorizontalScroll: React.FC<any> = ({
   children,
   ...props
 }): JSX.Element => {

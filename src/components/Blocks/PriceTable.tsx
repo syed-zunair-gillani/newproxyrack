@@ -1,6 +1,6 @@
 import { StoryData } from 'storyblok-js-client'
 
-import { Box, Button, Flex, Icon, Tag, Text } from 'UI'
+import { Box, Button, Flex, Icon, Tag, Text } from '../../UI'
 import {
   CONTACT,
   PRICE,
@@ -14,11 +14,11 @@ import {
   PRICE_PER_THREAD,
   PRICE_YEAR,
   VIP_EMAIL,
-} from 'common/constants'
-import { PricingStoryblok } from 'common/types'
-import { formatedPrice, formatedPriceCost } from 'common/utils/currency'
-import { CMSLink } from 'components/Shared/CMSLink'
-import { styled } from 'lib/style'
+} from '../../common/constants'
+import { PricingStoryblok } from '../../common/types'
+import { formatedPrice, formatedPriceCost } from '../../common/utils/currency'
+import { CMSLink } from '../../components/Shared/CMSLink'
+import { styled } from '../../lib/style'
 
 import { ButtonBlock } from './ButtonBlock'
 
@@ -86,7 +86,7 @@ export const PriceTable = ({
           }}
         >
           <InnerGrid variant="topLeft" />
-          {price?.content?.plans?.map((plan) => {
+          {price?.content?.plans?.map((plan:any) => {
             const hasButton = plan.button_link && plan.button_title
             const buttonNew = plan.button_new?.[0]
             return (
@@ -157,7 +157,7 @@ export const PriceTable = ({
               {PRICE}
             </Text>
           </InnerGrid>
-          {price?.content?.plans?.map((plan) => {
+          {price?.content?.plans?.map((plan:any) => {
             return (
               <InnerGrid
                 variant={plan.featured ? 'rightPopular' : 'right'}
@@ -188,7 +188,7 @@ export const PriceTable = ({
                 </Text>
               </Box>
             </InnerGrid>
-            {price?.content?.plans.map((plan) => {
+            {price?.content?.plans.map((plan:any) => {
               return (
                 <InnerGrid
                   variant={plan.featured ? 'rightPopular' : 'right'}
@@ -219,7 +219,7 @@ export const PriceTable = ({
                 {handleCostPerUnit(price?.content?.units)}
               </Text>
             </InnerGrid>
-            {price?.content?.plans?.map((plan) => {
+            {price?.content?.plans?.map((plan:any) => {
               const price = plan.trial
                 ? '-'
                 : formatedPriceCost(plan.price, plan.unit_amount)
@@ -253,7 +253,7 @@ export const PriceTable = ({
               <InnerGrid variant="left" key={val} css={{ gridColumn: '1' }}>
                 <>{val}</>
               </InnerGrid>
-              {price?.content?.plans?.map((plan) => {
+              {price?.content?.plans?.map((plan:any) => {
                 const hasFeature = plan.features?.includes(val)
                 return (
                   <InnerGrid

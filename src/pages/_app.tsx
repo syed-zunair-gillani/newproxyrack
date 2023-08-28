@@ -2,15 +2,15 @@ import { DefaultSeo } from 'next-seo'
 import type { AppProps } from 'next/app'
 import './style.css'
 
-import { Global } from 'UI'
+import { Global } from '../UI'
 import {
   DEFAULT_SEO_DESCRIPTION,
   DEFAULT_SEO_OG_DESCRIPTION,
   DEFAULT_SEO_OG_TITLE,
   DEFAULT_SEO_TITLE,
   SITE_ORIGIN,
-} from 'common/constants'
-import { NProgress } from 'components/NProgress'
+} from '../common/constants'
+import { NProgress } from '../components/NProgress'
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (

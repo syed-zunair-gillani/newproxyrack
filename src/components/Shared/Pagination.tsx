@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react'
 
-import { Flex, Icon, Text } from 'UI'
-import { styled } from 'lib/style'
+import { Flex, Icon, Text } from '../../UI'
+import { styled } from '../../lib/style'
 
 type PaginationProps = {
   currentPage: number

@@ -2,13 +2,13 @@
 import React, { useState } from 'react'
 import { useMemo } from 'react'
 
-import { Button, Container, InputRange, Text } from 'UI'
+import { Button, Container, InputRange, Text } from '../../UI'
 import {
   PricingSliderEntryStoryblok,
   PricingSliderStoryblok,
-} from 'common/types'
-import { parseStoryblokLink } from 'common/utils/content'
-import { CSS, styled } from 'lib/style'
+} from '../../common/types'
+import { parseStoryblokLink } from '../../common/utils/content'
+import { CSS, styled } from '../../lib/style'
 
 import { DynamicBlock } from './DynamicBlock'
 

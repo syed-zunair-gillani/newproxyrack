@@ -13,17 +13,17 @@ import {
   Tabs,
   Text,
   Theme,
-} from 'UI'
-import { ESTIMATED_COST, MONTHLY_USAGE } from 'common/constants'
+} from '../../UI'
+import { ESTIMATED_COST, MONTHLY_USAGE } from '../../common/constants'
 import {
   ComparisonToolStoryblok,
   ComparisonStoryblok,
   ComparisonCompanyStoryblok,
   ComparisonValueStoryblok,
-} from 'common/types'
-import { formatPriceToLocale, numberToLocale } from 'common/utils/currency'
-import { CMSRichText } from 'components/Shared/CMSRichText'
-import { styled } from 'lib/style'
+} from '../../common/types'
+import { formatPriceToLocale, numberToLocale } from '../../common/utils/currency'
+import { CMSRichText } from '../../components/Shared/CMSRichText'
+import { styled } from '../../lib/style'
 
 type ComparisonToolProps = {
   block: ComparisonToolStoryblok & {
@@ -57,7 +57,7 @@ export const ComparisonTool = ({
   block,
   ...props
 }: ComparisonToolProps): JSX.Element => {
-  const tabList = block.comparison?.content.metrics.map((metric) => {
+  const tabList = block.comparison?.content.metrics.map((metric:any) => {
     return metric.metric
   })
 
@@ -66,7 +66,7 @@ export const ComparisonTool = ({
 
   const comparisonValues =
     block.comparison?.content?.metrics.reduce<ComparisonValuesType>(
-      (acc, item) => {
+      (acc:any, item:any) => {
         return {
           ...acc,
           [item.metric]: item.quantities.map((q) => {
@@ -145,7 +145,7 @@ export const ComparisonTool = ({
                     </Text>
                   )}
                   <Tabs variant="rounded">
-                    {tabList?.map((val, index) => {
+                    {tabList?.map((val:any, index:number) => {
                       return (
                         <Tab
                           isActive={val === tabkey}
@@ -198,7 +198,7 @@ export const ComparisonTool = ({
                     {ESTIMATED_COST}
                   </Text>
                   <Divider />
-                  {comparisonValues[tabkey][rangeValue].values.map((v, i) => {
+                  {comparisonValues[tabkey][rangeValue].values.map((v:any, i:number) => {
                     const ProxyrackValue =
                       comparisonValues[tabkey][rangeValue].values[0].value
                     const total = parseInt(v.value) - parseInt(ProxyrackValue)

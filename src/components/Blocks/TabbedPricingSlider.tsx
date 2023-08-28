@@ -1,13 +1,13 @@
 import { useCallback, useMemo, useState } from 'react'
 
-import { Container, Flex, Tab, Tabs, Text } from 'UI'
-import { useInnerWidth } from 'common/hooks/useInnerWidth'
+import { Container, Flex, Tab, Tabs, Text } from '../../UI'
+import { useInnerWidth } from '../../common/hooks/useInnerWidth'
 import {
   TabbedPricingSliderEntry,
   TabbedPricingSliderStoryblok,
-} from 'common/types'
-import { filterUnique } from 'components/utils'
-import { styled } from 'lib/style'
+} from '../../common/types'
+import { filterUnique } from '../../components/utils'
+import { styled } from '../../lib/style'
 
 import { PricingSlider } from './PricingSlider'
 

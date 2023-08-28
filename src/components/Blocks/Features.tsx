@@ -1,10 +1,10 @@
 import NextImage from 'next/image'
 
-import { Box, Container, Tag, Text, Theme } from 'UI'
-import { FeaturesStoryblok } from 'common/types'
-import { getImageAttributes } from 'common/utils/content'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import { styled } from 'lib/style'
+import { Box, Container, Tag, Text, Theme } from '../../UI'
+import { FeaturesStoryblok } from '../../common/types'
+import { getImageAttributes } from '../../common/utils/content'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
+import { styled } from '../../lib/style'
 
 import { Editable } from './Editable'
 

@@ -3,12 +3,12 @@ import NextImage from 'next/image'
 import { wrap } from 'popmotion'
 import { useCallback, useState } from 'react'
 
-import { Box, Container, Divider, Flex, Icon, Tag, Text } from 'UI'
-import useInterval from 'common/hooks/useInterval'
-import { TestimonialStoryblok } from 'common/types'
-import { getImageAttributes } from 'common/utils/content'
-import { usePrevious, useWindowSize } from 'components/utils'
-import { styled } from 'lib/style'
+import { Box, Container, Divider, Flex, Icon, Tag, Text } from '../../UI'
+import useInterval from '../../common/hooks/useInterval'
+import { TestimonialStoryblok } from '../../common/types'
+import { getImageAttributes } from '../../common/utils/content'
+import { usePrevious, useWindowSize } from '../../components/utils'
+import { styled } from '../../lib/style'
 
 import { NewRichText } from './NewRichText'
 

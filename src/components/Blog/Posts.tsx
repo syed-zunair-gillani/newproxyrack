@@ -4,13 +4,13 @@ import NextLink from 'next/link'
 import React from 'react'
 import { StoryData } from 'storyblok-js-client'
 
-import { Box, Flex, Link, Tag, Text } from 'UI'
-import { BLOG_READ_ARTICLE } from 'common/constants'
-import { BlogPostStoryblok } from 'common/types'
-import { Editable } from 'components/Blocks/Editable'
-import { CardLoader } from 'components/Shared/CardLoader'
-import { useWindowSize } from 'components/utils'
-import { styled } from 'lib/style'
+import { Box, Flex, Link, Tag, Text } from '../../UI'
+import { BLOG_READ_ARTICLE } from '../../common/constants'
+import { BlogPostStoryblok } from '../../common/types'
+import { Editable } from '../../components/Blocks/Editable'
+import { CardLoader } from '../../components/Shared/CardLoader'
+import { useWindowSize } from '../../components/utils'
+import { styled } from '../../lib/style'
 
 type PostsProps = {
   posts: StoryData<BlogPostStoryblok>[]

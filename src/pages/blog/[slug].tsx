@@ -2,25 +2,25 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import React from 'react'
 import { StoryData } from 'storyblok-js-client'
 
-import { Box, Container } from 'UI'
+import { Box, Container } from '../../UI'
 import {
   BlogPostStoryblok,
   FooterStoryblok,
   NavbarStoryblok,
   PageStoryblok,
   PreFooterStoryblok,
-} from 'common/types'
-import { removeImageParagraphFromRichText } from 'common/utils/content'
-import BlogHeader from 'components/Blog/BlogHeader'
-import BlogRelated from 'components/Blog/BlogRelated'
-import { Seo } from 'components/Seo'
-import { CMSRichText } from 'components/Shared/CMSRichText'
-import Footer from 'components/Shared/Footer'
-import FooterMobile from 'components/Shared/FooterMobile'
-import Navbar from 'components/Shared/Navbar/Navbar'
-import NavbarMobile from 'components/Shared/Navbar/NavbarMobile'
-import Prefooter from 'components/Shared/Prefooter'
-import { Storyblok } from 'lib/storyblok'
+} from '../../common/types'
+import { removeImageParagraphFromRichText } from '../../common/utils/content'
+import BlogHeader from '../../components/Blog/BlogHeader'
+import BlogRelated from '../../components/Blog/BlogRelated'
+import { Seo } from '../../components/Seo'
+import { CMSRichText } from '../../components/Shared/CMSRichText'
+import Footer from '../../components/Shared/Footer'
+import FooterMobile from '../../components/Shared/FooterMobile'
+import Navbar from '../../components/Shared/Navbar/Navbar'
+import NavbarMobile from '../../components/Shared/Navbar/NavbarMobile'
+import Prefooter from '../../components/Shared/Prefooter'
+import { Storyblok } from '../../lib/storyblok'
 
 const RESOLVE_RELATIONS = ['page.navbar', 'page.pre_footer', 'page.footer']
 

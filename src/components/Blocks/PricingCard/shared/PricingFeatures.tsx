@@ -1,8 +1,8 @@
-import { Flex, Icon, Text } from 'UI'
-import { PricingCardFeaturesEntryStoryblok } from 'common/types'
-import { Editable } from 'components/Blocks/Editable'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import { styled } from 'lib/style'
+import { Flex, Icon, Text } from '../../../../UI'
+import { PricingCardFeaturesEntryStoryblok } from '../../../../common/types'
+import { Editable } from '../../../../components/Blocks/Editable'
+import { CMSRichTextField } from '../../../../components/Shared/CMSRichTextField'
+import { styled } from '../../../../lib/style'
 
 type PricingFeaturesProps = {
   price: PricingCardFeaturesEntryStoryblok[]

@@ -1,17 +1,17 @@
 import { ChangeEvent, useCallback, useEffect, useState } from 'react'
 
-import { Box, Card, Container, Divider, Flex, Select, Text } from 'UI'
+import { Box, Card, Container, Divider, Flex, Select, Text } from '../../UI'
 import {
   PROXY_LIST_ERROR,
   PROXY_LIST_OF,
   PROXY_LIST_RECORDS,
   PROXY_LIST_SHOWING,
-} from 'common/constants'
-import { ProxyListStoryblok } from 'common/types'
-import { Loader } from 'components/Shared/Loader'
-import { Pagination } from 'components/Shared/Pagination'
-import { Table } from 'components/Shared/Table/Table'
-import { styled } from 'lib/style'
+} from '../../common/constants'
+import { ProxyListStoryblok } from '../../common/types'
+import { Loader } from '../../components/Shared/Loader'
+import { Pagination } from '../../components/Shared/Pagination'
+import { Table } from '../../components/Shared/Table/Table'
+import { styled } from '../../lib/style'
 
 const options = [
   { label: '20', value: '20' },

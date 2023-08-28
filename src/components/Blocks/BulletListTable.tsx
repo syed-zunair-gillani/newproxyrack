@@ -1,6 +1,6 @@
-import { Container } from 'UI'
-import { BulletListTableStoryblok } from 'common/types'
-import { styled } from 'lib/style'
+import { Container } from '../../UI'
+import { BulletListTableStoryblok } from '../../common/types'
+import { styled } from '../../lib/style'
 
 import { NewRichText } from './NewRichText'
 

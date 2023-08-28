@@ -2,9 +2,9 @@
 // @ts-nocheck
 import React, { useEffect, useRef } from 'react'
 
-import { Container } from 'UI'
-import { TrustpilotStoryblok } from 'common/types'
-import { styled } from 'lib/style'
+import { Container } from '../../UI'
+import { TrustpilotStoryblok } from '../../common/types'
+import { styled } from '../../lib/style'
 
 type Trustpilot = {
   block: TrustpilotStoryblok

@@ -1,13 +1,13 @@
 import NextImage from 'next/image'
 import React from 'react'
 
-import { Container, Divider, Flex, Stack, Text } from 'UI'
-import { PROXYRACK } from 'common/constants'
-import { FooterStoryblok } from 'common/types'
-import { getImageAttributes } from 'common/utils/content'
-import { Editable } from 'components/Blocks/Editable'
-import { useCurrentYear } from 'components/utils'
-import { styled } from 'lib/style'
+import { Container, Divider, Flex, Stack, Text } from '../../UI'
+import { PROXYRACK } from '../../common/constants'
+import { FooterStoryblok } from '../../common/types'
+import { getImageAttributes } from '../../common/utils/content'
+import { Editable } from '../../components/Blocks/Editable'
+import { useCurrentYear } from '../../components/utils'
+import { styled } from '../../lib/style'
 
 import { CMSLink } from './CMSLink'
 

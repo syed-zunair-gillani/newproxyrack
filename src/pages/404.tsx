@@ -2,16 +2,16 @@ import { GetStaticProps } from 'next'
 import NextLink from 'next/link'
 import React from 'react'
 
-import { Box, Button, Container, Text } from 'UI'
+import { Box, Button, Container, Text } from '../UI'
 import {
   PAGE_404_BUTTON,
   PAGE_404_SUBTITLE,
   PAGE_404_TITLE,
-} from 'common/constants'
-import { NavbarStoryblok } from 'common/types'
-import Navbar from 'components/Shared/Navbar/Navbar'
-import NavbarMobile from 'components/Shared/Navbar/NavbarMobile'
-import { Storyblok } from 'lib/storyblok'
+} from '../common/constants'
+import { NavbarStoryblok } from '../common/types'
+import Navbar from '../components/Shared/Navbar/Navbar'
+import NavbarMobile from '../components/Shared/Navbar/NavbarMobile'
+import { Storyblok } from '../lib/storyblok'
 
 const RESOLVE_RELATIONS = ['page.navbar']
 

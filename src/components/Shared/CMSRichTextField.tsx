@@ -12,13 +12,13 @@ import {
   MARK_STYLED,
 } from 'storyblok-rich-text-react-renderer'
 
-import { Link, Text, Box, Container } from 'UI'
+import { Link, Text, Box, Container } from '../../UI'
 import {
   getStoryblokImageSize,
   storyblokImageService,
-} from 'common/utils/content'
-import { DynamicBlock } from 'components/Blocks/DynamicBlock'
-import { styled } from 'lib/style'
+} from '../../common/utils/content'
+import { DynamicBlock } from '../../components/Blocks/DynamicBlock'
+import { styled } from '../../lib/style'
 
 type RichText = React.ComponentProps<typeof RichText> & {
   type: 'doc'

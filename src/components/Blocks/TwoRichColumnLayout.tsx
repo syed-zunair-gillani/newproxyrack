@@ -1,6 +1,6 @@
-import { Box, Container, Flex } from 'UI'
-import { TwoRichColumnLayoutStoryblok } from 'common/types'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
+import { Box, Container, Flex } from '../../UI'
+import { TwoRichColumnLayoutStoryblok } from '../../common/types'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
 
 type PropsTypes = {
   block: TwoRichColumnLayoutStoryblok

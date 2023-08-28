@@ -1,10 +1,10 @@
 import NextImage from 'next/image'
 
-import { Box, Container, Flex, Text } from 'UI'
-import { TwoColumnsStoryblok } from 'common/types'
-import { getImageAttributes } from 'common/utils/content'
-import { CMSLink } from 'components/Shared/CMSLink'
-import { styled } from 'lib/style'
+import { Box, Container, Flex, Text } from '../../UI'
+import { TwoColumnsStoryblok } from '../../common/types'
+import { getImageAttributes } from '../../common/utils/content'
+import { CMSLink } from '../../components/Shared/CMSLink'
+import { styled } from '../../lib/style'
 
 import { ButtonBlock } from './ButtonBlock'
 import { NewRichText } from './NewRichText'

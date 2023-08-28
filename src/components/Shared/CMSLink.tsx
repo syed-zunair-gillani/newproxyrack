@@ -1,10 +1,10 @@
 import NextLink from 'next/link'
 import React from 'react'
 
-import { Button } from 'UI'
-import { Link } from 'UI/Link'
-import { SectionHeaderStoryblok } from 'common/types'
-import { parseStoryblokLink } from 'common/utils/content'
+import { Button } from '../../UI'
+import { Link } from '../../UI/Link'
+import { SectionHeaderStoryblok } from '../../common/types'
+import { parseStoryblokLink } from '../../common/utils/content'
 
 type CMSLinkProps = {
   href: SectionHeaderStoryblok['button_link']

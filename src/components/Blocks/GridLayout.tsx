@@ -1,9 +1,9 @@
 import { useMemo } from 'react'
 
-import { Container } from 'UI'
-import { GridLayoutStoryblok } from 'common/types'
-import { CMSRichText } from 'components/Shared/CMSRichText'
-import { styled } from 'lib/style'
+import { Container } from '../../UI'
+import { GridLayoutStoryblok } from '../../common/types'
+import { CMSRichText } from '../../components/Shared/CMSRichText'
+import { styled } from '../../lib/style'
 
 type PropsTypes = {
   block: GridLayoutStoryblok

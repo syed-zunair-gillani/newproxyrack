@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
-import { Box, Container, Tab, Tabs, Text } from 'UI'
-import { TabsStoryblok } from 'common/types'
-import { slugify } from 'common/utils/strings'
-import { styled } from 'lib/style'
+import { Box, Container, Tab, Tabs, Text } from '../../UI'
+import { TabsStoryblok } from '../../common/types'
+import { slugify } from '../../common/utils/strings'
+import { styled } from '../../lib/style'
 
 import { DynamicBlock } from './DynamicBlock'
 

@@ -1,14 +1,14 @@
 import NextImage from 'next/image'
 
-import { Box, Container, Flex, Icon, Text, Theme } from 'UI'
-import { NavbarStoryblok, PageStoryblok } from 'common/types'
-import { getImageAttributes } from 'common/utils/content'
-import { ButtonBlock } from 'components/Blocks/ButtonBlock'
-import { CMSLink } from 'components/Shared/CMSLink'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import Navbar from 'components/Shared/Navbar/Navbar'
-import NavbarMobile from 'components/Shared/Navbar/NavbarMobile'
-import { styled } from 'lib/style'
+import { Box, Container, Flex, Icon, Text, Theme } from '../../UI'
+import { NavbarStoryblok, PageStoryblok } from '../../common/types'
+import { getImageAttributes } from '../../common/utils/content'
+import { ButtonBlock } from '../../components/Blocks/ButtonBlock'
+import { CMSLink } from '../../components/Shared/CMSLink'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
+import Navbar from '../../components/Shared/Navbar/Navbar'
+import NavbarMobile from '../../components/Shared/Navbar/NavbarMobile'
+import { styled } from '../../lib/style'
 
 import { useScrollToContent } from './utils'
 

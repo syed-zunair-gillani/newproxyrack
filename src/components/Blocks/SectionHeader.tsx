@@ -1,12 +1,12 @@
 import { StandardLonghandProperties } from '@stitches/react/types/css-types'
 
-import { Container, Tag, Text } from 'UI'
-import { useScrollToAnchor } from 'common/hooks/useScrollToAnchor'
-import { SectionHeaderStoryblok } from 'common/types'
-import { slugify } from 'common/utils/strings'
-import { CMSLink } from 'components/Shared/CMSLink'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import { styled } from 'lib/style'
+import { Container, Tag, Text } from '../../UI'
+import { useScrollToAnchor } from '../../common/hooks/useScrollToAnchor'
+import { SectionHeaderStoryblok } from '../../common/types'
+import { slugify } from '../../common/utils/strings'
+import { CMSLink } from '../../components/Shared/CMSLink'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
+import { styled } from '../../lib/style'
 
 import { ButtonBlock } from './ButtonBlock'
 

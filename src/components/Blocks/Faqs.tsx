@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react'
 
-import { Accordion, Box, Container, Flex, Text } from 'UI'
-import { FaqsEntryStoryblok, FaqsStoryblok } from 'common/types'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import { styled } from 'lib/style'
+import { Accordion, Box, Container, Flex, Text } from '../../UI'
+import { FaqsEntryStoryblok, FaqsStoryblok } from '../../common/types'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
+import { styled } from '../../lib/style'
 
 import { Editable } from './Editable'
 

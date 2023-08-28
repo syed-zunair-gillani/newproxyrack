@@ -2,15 +2,15 @@ import { motion } from 'framer-motion'
 import NextImage from 'next/image'
 import { useEffect, useRef, useState, useCallback } from 'react'
 
-import { Box, Container, Divider, Flex, Text } from 'UI'
+import { Box, Container, Divider, Flex, Text } from '../../UI'
 import {
   FeatureCarouselEntryStoryblok,
   FeatureCarouselStoryblok,
-} from 'common/types'
-import { getImageAttributes } from 'common/utils/content'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import { useWindowSize } from 'components/utils'
-import { styled } from 'lib/style'
+} from '../../common/types'
+import { getImageAttributes } from '../../common/utils/content'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
+import { useWindowSize } from '../../components/utils'
+import { styled } from '../../lib/style'
 
 import { Editable } from './Editable'
 

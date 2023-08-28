@@ -1,6 +1,6 @@
-import { Container } from 'UI'
-import { IFrameStoryblok } from 'common/types'
-import { styled } from 'lib/style'
+import { Container } from '../../UI'
+import { IFrameStoryblok } from '../../common/types'
+import { styled } from '../../lib/style'
 
 type PropsTypes = {
   block: IFrameStoryblok

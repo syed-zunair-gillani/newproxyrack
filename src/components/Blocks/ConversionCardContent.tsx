@@ -1,14 +1,14 @@
 import NextImage from 'next/image'
 
-import { Card, Flex, Text } from 'UI'
+import { Card, Flex, Text } from '../../UI'
 import {
   ConversionCardHorizontalStoryblok,
   ConversionCardVerticalStoryblok,
-} from 'common/types'
-import { getImageAttributes } from 'common/utils/content'
-import { CMSLink } from 'components/Shared/CMSLink'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import { styled } from 'lib/style'
+} from '../../common/types'
+import { getImageAttributes } from '../../common/utils/content'
+import { CMSLink } from '../../components/Shared/CMSLink'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
+import { styled } from '../../lib/style'
 
 import { ButtonBlock } from './ButtonBlock'
 import { Editable } from './Editable'

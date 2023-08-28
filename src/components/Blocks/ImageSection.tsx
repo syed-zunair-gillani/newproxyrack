@@ -1,7 +1,7 @@
-import { Box, Container, Tag, Text } from 'UI'
-import { ImageSectionStoryblok } from 'common/types'
-import { CMSRichTextField } from 'components/Shared/CMSRichTextField'
-import { styled } from 'lib/style'
+import { Box, Container, Tag, Text } from '../../UI'
+import { ImageSectionStoryblok } from '../../common/types'
+import { CMSRichTextField } from '../../components/Shared/CMSRichTextField'
+import { styled } from '../../lib/style'
 
 type ImageSectionProps = {
   block: ImageSectionStoryblok

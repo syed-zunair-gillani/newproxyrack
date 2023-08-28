@@ -4,11 +4,11 @@ import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import Headroom from 'react-headroom'
 
-import { Accordion, Box, Container, Flex, Text, Theme } from 'UI'
-import { useBodyLock } from 'common/hooks/useBodyLock'
-import { NavbarPanelLinkStoryblok, NavbarStoryblok } from 'common/types'
-import { Editable } from 'components/Blocks/Editable'
-import { styled } from 'lib/style'
+import { Accordion, Box, Container, Flex, Text, Theme } from '../../../UI'
+import { useBodyLock } from '../../../common/hooks/useBodyLock'
+import { NavbarPanelLinkStoryblok, NavbarStoryblok } from '../../../common/types'
+import { Editable } from '../../../components/Blocks/Editable'
+import { styled } from '../../../lib/style'
 
 import { CMSLink } from '../CMSLink'
 
