@@ -1,4 +1,3 @@
-import { StoryData } from 'storyblok-js-client'
 
 import { Components } from './'
 import { Editable } from './Editable'
@@ -11,7 +10,7 @@ const Placeholder = ({ componentName }: { componentName: string }) => {
   return null
 }
 
-export const DynamicBlock: React.FC<{ block: StoryData['content'] }> = ({
+export const DynamicBlock: React.FC<any> = ({
   block,
 }) => {
   if (typeof Components[block.component] !== 'undefined') {

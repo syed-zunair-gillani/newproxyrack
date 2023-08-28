@@ -1,4 +1,3 @@
-import { StoryData } from 'storyblok-js-client'
 
 import { Box, Button, Flex, Icon, Tag, Text } from '../../UI'
 import {
@@ -23,24 +22,25 @@ import { styled } from '../../lib/style'
 import { ButtonBlock } from './ButtonBlock'
 
 type PriceTableProps = {
-  price?: StoryData<PricingStoryblok>
+  price?: PricingStoryblok
 }
 
 export const PriceTable = ({
   price,
   ...props
 }: PriceTableProps): JSX.Element => {
-  const allPlans = price?.content?.plans.reduce<string[]>(
-    (previous, current) => {
-      return [
-        ...previous,
-        ...current.features?.reduce(function (previousValue, currentValue) {
-          return [...previousValue, currentValue]
-        }, []),
-      ]
-    },
-    []
-  )
+
+  const allPlans = price?.content?.plans.reduce(
+  (previous:any, current:any) => {
+    return [
+      ...previous,
+      ...(current.features?.reduce(function (previousValue:any, currentValue:any) {
+        return [...previousValue, currentValue]
+      }, []) || []),
+    ];
+  },
+  []
+);
 
   const uniqueValues = Array.from(new Set(allPlans))
 

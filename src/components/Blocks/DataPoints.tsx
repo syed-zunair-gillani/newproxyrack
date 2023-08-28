@@ -95,8 +95,8 @@ export const DataPoints = ({
             <ImageWrapper>
               <NextImage
                 {...getImageAttributes(block.image)}
-                width={getImageAttributes(block.image).width}
-                height={getImageAttributes(block.image).height}
+                width={+getImageAttributes(block.image).width}
+                height={+getImageAttributes(block.image).height}
                 objectFit="cover"
                 quality="100"
                 priority

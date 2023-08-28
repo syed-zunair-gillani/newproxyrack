@@ -1,7 +1,7 @@
-import { RichTextStoryblok } from 'common/types'
-import { removeImageParagraphFromRichText } from 'common/utils/content'
-import { CMSRichText } from 'components/Shared/CMSRichText'
-import { styled } from 'lib/style'
+import { RichTextStoryblok } from '../../common/types'
+import { removeImageParagraphFromRichText } from '../../common/utils/content'
+import { CMSRichText } from '../../components/Shared/CMSRichText'
+import { styled } from '../../lib/style'
 
 type Props = {
   block: RichTextStoryblok

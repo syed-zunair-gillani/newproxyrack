@@ -1,5 +1,5 @@
-import { NewRichTextStoryblok } from 'common/types'
-import { CMSRichText } from 'components/Shared/CMSRichText'
+import { NewRichTextStoryblok } from '../../common/types'
+import { CMSRichText } from '../../components/Shared/CMSRichText'
 
 type PropsTypes = {
   block?: NewRichTextStoryblok

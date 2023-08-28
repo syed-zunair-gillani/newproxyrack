@@ -1,7 +1,6 @@
 import dayjs from 'dayjs'
 import NextLink from 'next/link'
 import React from 'react'
-import { StoryData } from 'storyblok-js-client'
 
 import { Container, Flex, Link, Tag, Text } from '../../UI'
 import { BLOG_READ_ARTICLE } from '../../common/constants'
@@ -10,14 +9,14 @@ import { Editable } from '../../components/Blocks/Editable'
 import { styled } from '../../lib/style'
 
 type BlogRelatedProps = {
-  related?: StoryData<BlogPostStoryblok>[]
+  related?: BlogPostStoryblok
 }
 
 const BlogRelated: React.FC<BlogRelatedProps> = ({ related }) => {
   return (
     <Container>
       <Wrapper>
-        {related?.map((post) => {
+        {related?.map((post:any) => {
           const tagList =
             post.tag_list.length > 3
               ? [...post.tag_list?.slice(0, 3), `+ ${post.tag_list.length - 3}`]
@@ -60,7 +59,7 @@ const BlogRelated: React.FC<BlogRelatedProps> = ({ related }) => {
                         flexWrap: 'wrap',
                       }}
                     >
-                      {tagList.map((tag) => {
+                      {tagList.map((tag:any) => {
                         return (
                           <Tag key={tag} css={{ mr: '$8', mb: '$8' }}>
                             {tag}

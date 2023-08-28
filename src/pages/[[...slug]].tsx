@@ -2,11 +2,10 @@ import HTMLReactParser from 'html-react-parser'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { StoryData } from 'storyblok-js-client'
 
-import { PreviewModeAlert } from 'components/PreviewModeAlert'
-import { StaticPage, StaticPageProps } from 'components/StaticPage'
-import { Storyblok, useStoryblok } from 'lib/storyblok'
+import { PreviewModeAlert } from '../components/PreviewModeAlert'
+import { StaticPage, StaticPageProps } from '../components/StaticPage'
+import { Storyblok, useStoryblok } from '../lib/storyblok'
 
 const RESOLVE_RELATIONS = [
   'page.pre_footer',
@@ -18,7 +17,7 @@ const RESOLVE_RELATIONS = [
 ]
 
 type PageProps = {
-  story: StoryData
+  story: any
 }
 
 const CatchAllPage = (props: PageProps): JSX.Element | null => {

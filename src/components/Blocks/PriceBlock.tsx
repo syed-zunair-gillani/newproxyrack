@@ -1,13 +1,12 @@
-import { StoryData } from 'storyblok-js-client'
 
-import { PriceTableStoryblok, PricingStoryblok } from 'common/types'
+import { PriceTableStoryblok, PricingStoryblok } from '../../common/types'
 
 import { PriceBlockVertical } from './PriceBlockVertical'
 import { PriceTable } from './PriceTable'
 
 type PriceBlockProps = {
   block: PriceTableStoryblok & {
-    price?: StoryData<PricingStoryblok>
+    price?: any
   }
 }
 

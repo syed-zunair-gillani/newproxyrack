@@ -1,6 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next'
 import React from 'react'
-import { StoryData } from 'storyblok-js-client'
 
 import { Box, Container } from '../../UI'
 import {
@@ -25,11 +24,11 @@ import { Storyblok } from '../../lib/storyblok'
 const RESOLVE_RELATIONS = ['page.navbar', 'page.pre_footer', 'page.footer']
 
 type BlogPostProps = {
-  story: StoryData<BlogPostStoryblok>
+  story: BlogPostStoryblok
   navbar?: NavbarStoryblok
-  prefooter?: PageStoryblok & StoryData<PreFooterStoryblok>
-  footer?: PageStoryblok & StoryData<FooterStoryblok>
-  related?: StoryData<BlogPostStoryblok>[]
+  prefooter?: PageStoryblok & PreFooterStoryblok
+  footer?: PageStoryblok & FooterStoryblok
+  related?: BlogPostStoryblok
 }
 
 const BlogPost: React.FC<BlogPostProps> = ({ ...props }) => {

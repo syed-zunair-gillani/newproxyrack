@@ -17,6 +17,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/common/hooks/useBodyLock.jsx", "src/components/Blocks/ComparisonTool.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/common/hooks/useBodyLock.jsx", "src/components/Blocks/ComparisonTool.jsx", "src/components/Blocks/Editable.jsx"],
   "exclude": ["node_modules"]
 }

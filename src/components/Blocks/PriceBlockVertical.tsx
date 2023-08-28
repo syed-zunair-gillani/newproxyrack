@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import { StoryData } from 'storyblok-js-client'
 
 import {
   Box,
@@ -34,7 +33,7 @@ import { ButtonBlock } from './ButtonBlock'
 import { Editable } from './Editable'
 
 type PriceBlockVerticalProps = {
-  price?: StoryData<PricingStoryblok>
+  price?: PricingStoryblok
 }
 
 export const PriceBlockVertical = ({

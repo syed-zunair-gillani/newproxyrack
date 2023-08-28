@@ -2,7 +2,6 @@ import { GetStaticProps } from 'next'
 import { NextSeo } from 'next-seo'
 import { useRouter } from 'next/router'
 import { useCallback, useEffect, useState } from 'react'
-import { StoryData } from 'storyblok-js-client'
 
 import { Box, Container, Text } from '../../UI'
 import {
@@ -39,10 +38,10 @@ export type TagsType = {
 type BlogIndexPageProps = {
   navbar?: NavbarStoryblok
   tags?: TagsType[]
-  posts: StoryData<BlogPostStoryblok>[]
+  posts: BlogPostStoryblok
   total: number
-  prefooter?: PageStoryblok & StoryData<PreFooterStoryblok>
-  footer?: PageStoryblok & StoryData<FooterStoryblok>
+  prefooter?: PageStoryblok & PreFooterStoryblok
+  footer?: PageStoryblok & FooterStoryblok
 }
 
 const BlogIndexPage = (props: BlogIndexPageProps): JSX.Element => {
