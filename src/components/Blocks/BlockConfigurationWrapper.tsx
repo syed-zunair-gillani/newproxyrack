@@ -1,8 +1,8 @@
-import { Theme } from 'UI'
+import { Theme } from '../../UI'
 import {
   BlockConfigurations,
   BlockConfigurationsWrapperStoryblok,
-} from 'common/types'
+} from '../../common/types'
 
 import { DynamicBlock } from './DynamicBlock'
 
