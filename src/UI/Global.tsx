@@ -1,4 +1,4 @@
-import { global } from 'lib/style'
+import { global } from '../lib/style'
 
 const globalStyles = global({
   html: {

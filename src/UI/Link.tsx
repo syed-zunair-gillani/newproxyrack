@@ -1,7 +1,7 @@
 import React, { AnchorHTMLAttributes, forwardRef, Ref } from 'react'
 
-import { Box } from 'UI'
-import { styled } from 'lib/style'
+import { Box } from '../UI'
+import { styled } from '../lib/style'
 
 import { Icon, IconOptions } from './Icon/Icon'
 

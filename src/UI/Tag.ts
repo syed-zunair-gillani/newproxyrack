@@ -1,4 +1,4 @@
-import { styled } from 'lib/style'
+import { styled } from '../lib/style'
 
 export const Tag = styled('span', {
   display: 'inline-flex',

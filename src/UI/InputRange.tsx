@@ -1,6 +1,6 @@
 import { InputHTMLAttributes } from 'react'
 
-import { CSS, styled } from 'lib/style'
+import { CSS, styled } from '../lib/style'
 
 import { Box } from './Box'
 import { Icon } from './Icon/Icon'

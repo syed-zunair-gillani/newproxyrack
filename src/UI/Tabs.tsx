@@ -7,7 +7,7 @@ import React, {
   useState,
 } from 'react'
 
-import { CSS, styled } from 'lib/style'
+import { CSS, styled } from '../lib/style'
 
 import { Stack } from './Stack'
 
@@ -29,6 +29,7 @@ type TabsProps = {
   variant?: Variant
   css?: CSS
   direction?: 'horizontal' | 'vertical'
+  children? : any
 }
 export const Tabs: React.FC<TabsProps> = ({
   variant = 'default',

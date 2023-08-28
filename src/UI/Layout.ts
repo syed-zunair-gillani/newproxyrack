@@ -1,4 +1,4 @@
-import { styled } from 'lib/style'
+import { styled } from '../lib/style'
 
 import { Box } from './Box'
 

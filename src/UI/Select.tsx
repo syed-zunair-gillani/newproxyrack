@@ -1,7 +1,7 @@
 import { SelectHTMLAttributes } from 'react'
 
-import { Box, Icon } from 'UI'
-import { CSS, styled } from 'lib/style'
+import { Box, Icon } from '../UI'
+import { CSS, styled } from '../lib/style'
 
 type InputSelectProps = SelectHTMLAttributes<HTMLSelectElement> & {
   containerStyle?: Omit<CSS, 'position'>

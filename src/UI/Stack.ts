@@ -1,4 +1,4 @@
-import { styled, space, CSS } from 'lib/style'
+import { styled, space, CSS } from '../lib/style'
 
 type Direction = 'vertical' | 'horizontal'
 
