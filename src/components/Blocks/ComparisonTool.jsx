@@ -21,87 +21,77 @@ import {
   ComparisonValueStoryblok,
 } from '../../common/types'
 import { formatPriceToLocale, numberToLocale } from '../../common/utils/currency'
-import { CMSRichText } from '../../components/Shared/CMSRichText'
+import { CMSRichText } from '../Shared/CMSRichText'
 import { styled } from '../../lib/style'
 
-type ComparisonToolProps = {
-  block: ComparisonToolStoryblok & {
-    comparison?: any
-  }
-}
+// type ComparisonToolProps = {
+//   block: ComparisonToolStoryblok & {
+//     comparison?: any
+//   }
+// }
 
-type ComparisonValuesType = {
-  [key: string]: {
-    quantity: string
-    values: {
-      company: {
-        content: {
-          name: string
-          logo: {
-            alt?: string
-            copyright?: string
-            id: number
-            filename: string
-            name: string
-            title?: string
-          }
-        }
-      }
-      value: string
-    }[]
-  }[]
-}
+// type ComparisonValuesType = {
+//   [key: string]: {
+//     quantity: string
+//     values: {
+//       company: {
+//         content: {
+//           name: string
+//           logo: {
+//             alt?: string
+//             copyright?: string
+//             id: number
+//             filename: string
+//             name: string
+//             title?: string
+//           }
+//         }
+//       }
+//       value: string
+//     }[]
+//   }[]
+// }
 
 export const ComparisonTool = ({
   block,
   ...props
-}: ComparisonToolProps): JSX.Element => {
-  const tabList = block.comparison?.content.metrics.map((metric:any) => {
+}) => {
+  const tabList = block.comparison?.content.metrics.map((metric) => {
     return metric.metric
   })
 
   const [tabkey, setTabkey] = useState(tabList && tabList[0])
   const [rangeValue, setRangeValue] = useState(0)
 
-  const comparisonValues =
-    block.comparison?.content?.metrics.reduce<ComparisonValuesType>(
-      (acc:any, item:any) => {
-        return {
-          ...acc,
-          [item.metric]: item.quantities.map((q) => {
-            const values = (
-              q.values as unknown as (Omit<
-                ComparisonValueStoryblok,
-                'company'
-              > & {
-                company: { content: ComparisonCompanyStoryblok }
-              })[]
-            )
-              .sort((a, b) => {
-                if (a.company.content?.name === 'Proxyrack') {
-                  return -1
-                }
-                if (b.company.content?.name === 'Proxyrack') {
-                  return 1
-                }
-                return ('' + a.company.content?.name).localeCompare(
-                  b.company.content?.name
-                )
-              })
-              .map((value) => ({
-                company: value.company,
-                value: value.value,
-              }))
-
-            return {
-              quantity: q.quantity.toString(),
-              values,
+  const comparisonValues = block.comparison?.content?.metrics.reduce((acc, item) => {
+    return {
+      ...acc,
+      [item.metric]: item.quantities.map((q) => {
+        const values = q.values
+          .sort((a, b) => {
+            if (a.company.content?.name === 'Proxyrack') {
+              return -1;
             }
-          }),
-        }
-      },
-      {}
-    )
+            if (b.company.content?.name === 'Proxyrack') {
+              return 1;
+            }
+            return ('' + a.company.content?.name).localeCompare(b.company.content?.name);
+          })
+          .map((value) => ({
+            company: value.company,
+            value: value.value,
+          }));
+  
+        return {
+          quantity: q.quantity.toString(),
+          values,
+        };
+      }),
+    };
+  }, {});
+  
+  
+  
 
   return (
     <Wrapper {...props}>
@@ -144,7 +134,7 @@ export const ComparisonTool = ({
                     </Text>
                   )}
                   <Tabs variant="rounded">
-                    {tabList?.map((val:any, index:number) => {
+                    {tabList?.map((val, index) => {
                       return (
                         <Tab
                           isActive={val === tabkey}
@@ -197,7 +187,7 @@ export const ComparisonTool = ({
                     {ESTIMATED_COST}
                   </Text>
                   <Divider />
-                  {comparisonValues[tabkey][rangeValue].values.map((v:any, i:number) => {
+                  {comparisonValues[tabkey][rangeValue].values.map((v, i) => {
                     const ProxyrackValue =
                       comparisonValues[tabkey][rangeValue].values[0].value
                     const total = parseInt(v.value) - parseInt(ProxyrackValue)
