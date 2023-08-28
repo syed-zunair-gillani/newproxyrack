@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
-import { StoryData } from 'storyblok-js-client'
 
 import {
   NavbarStoryblok,
   FooterStoryblok,
   PageStoryblok,
   PreFooterStoryblok,
-} from 'common/types'
+} from '../common/types'
 
 import { DynamicBlock } from './Blocks/DynamicBlock'
 import Hero from './Hero/Hero'
@@ -19,13 +18,7 @@ import FooterMobile from './Shared/FooterMobile'
 import Prefooter from './Shared/Prefooter'
 
 export type StaticPageProps = {
-  story: StoryData<
-    PageStoryblok & {
-      pre_footer?: StoryData<PreFooterStoryblok>
-      navbar?: StoryData<NavbarStoryblok>
-      footer?: StoryData<FooterStoryblok>
-    }
-  >
+  story: any
 }
 
 export const StaticPage = ({ story }: StaticPageProps): JSX.Element => {
@@ -37,10 +30,10 @@ export const StaticPage = ({ story }: StaticPageProps): JSX.Element => {
         const generateTags = (parentType: 'head' | 'body') => {
           story.content[
             parentType === 'body' ? 'body_tags' : 'head_tags'
-          ]?.forEach((tagEntry) => {
+          ]?.forEach((tagEntry:any) => {
             const tag = document.createElement(tagEntry.tag_name)
             if (tag) {
-              tagEntry.attributes.split('\n').forEach((attribute) => {
+              tagEntry.attributes.split('\n').forEach((attribute:any) => {
                 const equalIndex = attribute.indexOf('=')
                 const [attributeName, attributeValue]: string[] = [
                   attribute.slice(0, equalIndex),
@@ -135,7 +128,7 @@ export const StaticPage = ({ story }: StaticPageProps): JSX.Element => {
           />
         )}
 
-      {story.content.body?.map((block) => {
+      {story.content.body?.map((block:any) => {
         return <DynamicBlock key={block._uid} block={block} />
       })}
       {story.content.pre_footer && (

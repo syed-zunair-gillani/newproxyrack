@@ -1,14 +1,13 @@
 import { NextSeo } from 'next-seo'
 import React from 'react'
-import { StoryData } from 'storyblok-js-client'
 
-import { SITE_ORIGIN } from 'common/constants'
+import { SITE_ORIGIN } from '../common/constants'
 import {
   fixMissingTrailingSlashOfUrl,
   removePagesPrefix,
-} from 'common/utils/content'
+} from '../common/utils/content'
 
-export const Seo = ({ story }: { story: StoryData }): JSX.Element => {
+export const Seo = ({ story }: { story: any }): JSX.Element => {
   const url = (SITE_ORIGIN + removePagesPrefix(story.full_slug)).trim()
   const noIndex = story.content?.should_index === 'no'
 

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { StoryData } from 'storyblok-js-client'
 
 import {
   Box,
@@ -27,7 +26,7 @@ import { styled } from '../../lib/style'
 
 type ComparisonToolProps = {
   block: ComparisonToolStoryblok & {
-    comparison?: StoryData<ComparisonStoryblok>
+    comparison?: any
   }
 }
 
