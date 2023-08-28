@@ -1,9 +1,9 @@
 import NextImage from 'next/image'
 
-import { Box, Container, Flex, Tag, Text } from 'UI'
-import { BestForInfoStoryblok } from 'common/types'
-import { getImageAttributes } from 'common/utils/content'
-import { styled } from 'lib/style'
+import { Box, Container, Flex, Tag, Text } from '../../UI'
+import { BestForInfoStoryblok } from '../../common/types'
+import { getImageAttributes } from '../../common/utils/content'
+import { styled } from '../../lib/style'
 
 import { Editable } from './Editable'
 
