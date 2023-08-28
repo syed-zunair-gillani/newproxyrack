@@ -1,10 +1,12 @@
-import { styled } from 'lib/style'
+import React from 'react'
+import { styled } from '../lib/style'
 
 import { Box } from './Box'
 import { Theme } from './Theme'
 
 type CardProps = {
   variant: 'primary' | 'secondary'
+  children : React.ReactNode
 }
 
 export const LightCard: React.FC<CardProps> = ({ children, ...props }) => {

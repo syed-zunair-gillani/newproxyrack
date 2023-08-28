@@ -9,6 +9,7 @@ type AccordionProps = {
   title: string | React.ReactNode
   isOpen: boolean
   onClick: () => void
+  children? : any
 }
 
 export const Accordion: React.FC<AccordionProps> = ({

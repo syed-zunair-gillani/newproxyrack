@@ -1,4 +1,4 @@
-import { global } from 'lib/style'
+import { global } from '../lib/style'
 
 export const nprogress = global({
   '#nprogress': { pointerEvents: 'none', position: 'fixed', zIndex: '$max' },

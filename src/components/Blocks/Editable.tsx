@@ -1,7 +1,7 @@
 import { Children, cloneElement, isValidElement } from 'react'
-import { StoryData } from 'storyblok-js-client'
+// import { ISbStoryData } from 'storyblok-js-client'
 
-export const Editable: React.FC<{ block: StoryData['content'] }> = ({
+export const Editable: React.FC<any> = ({
   children,
   block,
 }) => {

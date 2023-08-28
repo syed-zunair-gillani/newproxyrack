@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export function useBodyLock(condition: boolean): void {
+export function useBodyLock(condition) {
   useEffect(() => {
     const scrollbarVisible = window.visualViewport.width < window.innerWidth
 
