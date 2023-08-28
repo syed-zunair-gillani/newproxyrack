@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-import { styled } from 'lib/style'
+import { styled } from '../lib/style'
 
 import { Flex } from './Box'
 import { Icon } from './Icon/Icon'
