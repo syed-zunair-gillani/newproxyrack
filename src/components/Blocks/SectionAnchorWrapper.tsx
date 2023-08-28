@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { SectionAnchorWrapperStoryblok } from 'common/types'
+import { SectionAnchorWrapperStoryblok } from '../../common/types'
 
 import { DynamicBlock } from './DynamicBlock'
 

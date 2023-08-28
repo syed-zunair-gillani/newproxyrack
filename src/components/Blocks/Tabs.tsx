@@ -30,7 +30,7 @@ export const TabsBlock = ({ block, ...props }: TabsBlockProps): JSX.Element => {
             return (
               <Tab
                 isActive={index === activeTab}
-                onClick={(e) => {
+                onClick={(e:any) => {
                   e.stopPropagation()
                   setActiveTab(index)
                 }}

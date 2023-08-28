@@ -1,6 +1,6 @@
 import { motion, Transition } from 'framer-motion'
 
-import { styled } from 'lib/style'
+import { styled } from '../../lib/style'
 
 const Wrapper = styled(motion.div, {
   display: 'flex',

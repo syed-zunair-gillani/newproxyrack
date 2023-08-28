@@ -15,7 +15,7 @@ export function Table<
     <StyledTable>
       <Thead>
         <Tr>
-          {thead?.map((th, i) => (
+          {thead?.map((th:any, i:number) => (
             <Th key={i}>
               <p>{th}</p>
             </Th>
@@ -23,9 +23,9 @@ export function Table<
         </Tr>
       </Thead>
       <Tbody>
-        {tbody?.map((tr, i) => (
+        {tbody?.map((tr:any, i:number) => (
           <Tr key={i}>
-            {thead?.map((th, j) => {
+            {thead?.map((th:any, j:number) => {
               return (
                 <Td key={j}>
                   <p>{tr?.[th]}</p>

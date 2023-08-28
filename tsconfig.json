@@ -14,7 +14,9 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@stitches/react/types/css-types": ["./node_modules/@stitches/react/types/css-types"]
+
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/common/hooks/useBodyLock.jsx", "src/components/Blocks/ComparisonTool.jsx", "src/components/Blocks/Editable.jsx"],

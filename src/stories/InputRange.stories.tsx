@@ -25,7 +25,7 @@ const Template: ComponentStory<typeof InputRange> = () => {
         max={100}
         step="10"
         value={value}
-        onChange={(e) => setValue(Number(e.currentTarget.value))}
+        onChange={(e:any) => setValue(Number(e.currentTarget.value))}
       />
     </Box>
   )

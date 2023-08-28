@@ -1,4 +1,4 @@
-import { StandardLonghandProperties } from '@stitches/react/types/css-types'
+import { StandardLonghandProperties } from '../../../node_modules/@stitches/react/types/css'
 
 import { Container, Tag, Text } from '../../UI'
 import { useScrollToAnchor } from '../../common/hooks/useScrollToAnchor'

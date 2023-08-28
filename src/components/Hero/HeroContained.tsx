@@ -232,7 +232,7 @@ const HeroContained: React.FC<HeroContainedProps> = ({
                   )}
                   {content[0].scroll_button && (
                     <StyledLink
-                      onClick={(e) => {
+                      onClick={(e:any) => {
                         e.preventDefault()
                         scrollToContent()
                       }}

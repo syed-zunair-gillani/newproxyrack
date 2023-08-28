@@ -1,7 +1,7 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import React from 'react'
 
-import { getCssString } from 'lib/style'
+import { getCssString } from '../lib/style'
 
 const GTM_ID = process.env.GTM_ID || ''
 

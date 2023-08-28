@@ -14,12 +14,6 @@ import {
   Theme,
 } from '../../UI'
 import { ESTIMATED_COST, MONTHLY_USAGE } from '../../common/constants'
-import {
-  ComparisonToolStoryblok,
-  ComparisonStoryblok,
-  ComparisonCompanyStoryblok,
-  ComparisonValueStoryblok,
-} from '../../common/types'
 import { formatPriceToLocale, numberToLocale } from '../../common/utils/currency'
 import { CMSRichText } from '../Shared/CMSRichText'
 import { styled } from '../../lib/style'
@@ -175,9 +169,11 @@ export const ComparisonTool = ({
                     max={comparisonValues[tabkey].length - 1}
                     step={1}
                     value={rangeValue}
-                    onChange={(e) =>
-                      setRangeValue(Number(e.currentTarget.value))
-                    }
+                    onChange={async (e) => {
+                      const response = await edit(req, res);
+                      setRangeValue(Number(e.currentTarget.value));
+                      return response
+                    }}
                   />
                 </Flex>
               </WrapperLeft>

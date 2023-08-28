@@ -1,7 +1,7 @@
 import { Router } from 'next/router'
 import ProgressBar from 'nprogress'
 
-import { global } from 'lib/style'
+import { global } from '../lib/style'
 
 ProgressBar.configure({ showSpinner: false })
 Router.events.on('routeChangeStart', () => ProgressBar.start())
