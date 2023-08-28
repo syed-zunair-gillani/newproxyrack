@@ -3,7 +3,7 @@ import {
   darkTheme,
   lightThemeForBlock,
   transparentThemeForBlock,
-} from 'lib/style'
+} from '../lib/style'
 
 type ThemeProps = {
   theme:
@@ -12,13 +12,13 @@ type ThemeProps = {
     | 'transparentForBlock'
     | 'lightForBlock'
     | 'darkForBlock'
+  children: any
 }
 
 export const Theme: React.FC<ThemeProps> = ({ theme = 'light', ...props }) => {
   const themes = {
     light: lightTheme,
     dark: darkTheme,
-
     lightForBlock: lightThemeForBlock,
     darkForBlock: darkTheme,
     transparentForBlock: transparentThemeForBlock,
