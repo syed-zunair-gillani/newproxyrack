@@ -93,8 +93,8 @@ export const Testimonial = ({
               {...getImageAttributes(block.image)}
               objectFit="cover"
               quality="100"
-              width={getImageAttributes(block.image).width}
-              height={getImageAttributes(block.image).height}
+              width={+getImageAttributes(block.image).width}
+              height={+getImageAttributes(block.image).height}
             />
           </ImageWrapper>
         )}

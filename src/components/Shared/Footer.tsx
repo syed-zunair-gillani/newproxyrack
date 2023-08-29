@@ -176,8 +176,8 @@ const Footer: React.FC<FooterProps> = ({ content, ...props }) => {
                             {...getImageAttributes(social.image)}
                             objectFit="cover"
                             quality="100"
-                            width={getImageAttributes(social.image).width}
-                            height={getImageAttributes(social.image).height}
+                            width={+getImageAttributes(social.image).width}
+                            height={+getImageAttributes(social.image).height}
                           />
                         </ImageWrapper>
                       </CMSLink>

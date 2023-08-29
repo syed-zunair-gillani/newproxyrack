@@ -86,8 +86,8 @@ const defaultNodeResolvers = {
                 : storyblokImageService(attrs.src, '1000x0')
             }
             alt={attrs.alt}
-            width={getStoryblokImageSize(attrs.src).width}
-            height={getStoryblokImageSize(attrs.src).height}
+            width={+getStoryblokImageSize(attrs.src).width}
+            height={+getStoryblokImageSize(attrs.src).height}
             layout="responsive"
           />
           {attrs.title && (
