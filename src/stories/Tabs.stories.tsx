@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React, { useState } from 'react'
 
-import { Box, Tab, Tabs } from 'UI'
+import { Box, Tab, Tabs } from '../UI'
 
 export default {
   title: 'UI/Tabs',

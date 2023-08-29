@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
-import { Box, Input } from 'UI'
+import { Box, Input } from '../UI'
 
 export default {
   title: 'UI/Input',

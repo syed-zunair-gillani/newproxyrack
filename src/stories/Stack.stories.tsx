@@ -1,8 +1,8 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
-import { Stack, Box, Text } from 'UI'
-import { space } from 'lib/style'
+import { Stack, Box, Text } from '../UI'
+import { space } from '../lib/style'
 
 export default {
   title: 'UI/Stack',

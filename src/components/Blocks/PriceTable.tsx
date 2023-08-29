@@ -240,7 +240,7 @@ export const PriceTable = ({
             })}
           </Row>
         )}
-        {uniqueValues.map((val) => {
+        {uniqueValues.map((val:any) => {
           return (
             <Row
               css={{

@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
-import { Box, Icon } from 'UI'
+import { Box, Icon } from '../UI'
 
 export default {
   title: 'UI/Icon',

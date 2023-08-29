@@ -1,7 +1,7 @@
 import { GetStaticPaths } from 'next'
 
-import { Storyblok } from 'lib/storyblok'
-import BlogPostPage, { getStaticProps } from 'pages/blog'
+import { Storyblok } from '../../../../lib/storyblok'
+import BlogPostPage, { getStaticProps } from '../../../../pages/blog'
 
 export default BlogPostPage
 

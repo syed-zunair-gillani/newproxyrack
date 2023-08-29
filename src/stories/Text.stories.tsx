@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
-import { Text } from 'UI'
+import { Text } from '../UI'
 
 export default {
   title: 'UI/Text',

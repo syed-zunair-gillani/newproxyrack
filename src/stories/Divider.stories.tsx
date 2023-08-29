@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
-import { Box, Divider } from 'UI'
+import { Box, Divider } from '../UI'
 
 export default {
   title: 'UI/Divider',

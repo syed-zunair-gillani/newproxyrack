@@ -31,7 +31,7 @@ type BlogPostProps = {
   related?: BlogPostStoryblok
 }
 
-const BlogPost: React.FC<BlogPostProps> = ({ ...props }) => {
+const BlogPost: React.FC<any> = ({ ...props }) => {
   const { title, author, blog_post } = props.story.content
 
   return (

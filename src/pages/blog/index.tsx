@@ -44,7 +44,7 @@ type BlogIndexPageProps = {
   footer?: PageStoryblok & FooterStoryblok
 }
 
-const BlogIndexPage = (props: BlogIndexPageProps): JSX.Element => {
+const BlogIndexPage = (props: any): JSX.Element => {
   const { isPreview, push, query } = useRouter()
 
   const [posts, setPosts] = useState(props.posts)
@@ -59,7 +59,7 @@ const BlogIndexPage = (props: BlogIndexPageProps): JSX.Element => {
     setError(false)
 
     try {
-      const args = {
+      const args: any = {
         version: isPreview ? 'draft' : 'published',
         starts_with: 'pages/blog/',
         with_tag: query.tag,
@@ -69,8 +69,17 @@ const BlogIndexPage = (props: BlogIndexPageProps): JSX.Element => {
       }
 
       const res = await Storyblok.get('cdn/stories', args)
-      setPosts(res.data.stories)
-      setTotal(res.headers.total)
+      // setPosts(res.data.stories)
+      // setTotal(res.headers.total)
+      if (res.data && res.data.stories) {
+        setPosts(res.data.stories);
+        // Check if 'total' is available in the response data
+        const total = res.data.total || 0; // Default to 0 if 'total' is not present
+        setTotal(total);
+      } else {
+        // Handle the case where the response structure is unexpected
+        setError(true);
+      }
     } catch {
       setError(true)
     }
@@ -167,7 +176,7 @@ export const getStaticProps: GetStaticProps<BlogIndexPageProps> = async (
     version: ctx.preview ? 'draft' : 'published',
   })
 
-  const args = {
+  const args: any = {
     version: ctx.preview ? 'draft' : 'published',
     starts_with: 'pages/blog/',
     sort_by: 'first_published_at:desc',

@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
-import { Box, Link, Text } from 'UI'
+import { Box, Link, Text } from '../UI'
 
 export default {
   title: 'UI/Link',

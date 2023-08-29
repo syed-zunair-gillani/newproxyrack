@@ -7,6 +7,7 @@ import { Theme } from './Theme'
 type CardProps = {
   variant: 'primary' | 'secondary'
   children : React.ReactNode
+  css?: any
 }
 
 export const LightCard: React.FC<CardProps> = ({ children, ...props }) => {

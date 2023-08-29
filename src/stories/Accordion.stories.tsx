@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React, { useState } from 'react'
 
-import { Accordion, Text, Box } from 'UI'
+import { Accordion, Text, Box } from '../UI'
 
 export default {
   title: 'UI/Accordion',

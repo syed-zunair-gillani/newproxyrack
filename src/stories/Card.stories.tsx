@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
-import { LightCard as LightCardComponent, Card, Text } from 'UI'
+import { LightCard as LightCardComponent, Card, Text } from '../UI'
 
 export default {
   title: 'UI/Card',

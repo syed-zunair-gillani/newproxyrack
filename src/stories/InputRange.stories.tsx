@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React, { useState } from 'react'
 
-import { Box, InputRange } from 'UI'
+import { Box, InputRange } from '../UI'
 
 export default {
   title: 'UI/InputRange',

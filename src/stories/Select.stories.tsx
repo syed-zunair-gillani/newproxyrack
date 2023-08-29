@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
-import { Box, Select } from 'UI'
+import { Box, Select } from '../UI'
 
 export default {
   title: 'UI/Select',
