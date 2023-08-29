@@ -143,13 +143,13 @@ const Hero: React.FC<HeroProps> = ({
           {content[0].background_fallback &&
             content[0].background_fallback.filename && (
               <ImageWrapper>
-                <NextImage
+                {/* <NextImage
                   {...getImageAttributes(content[0].background_fallback)}
                   objectFit="cover"
                   quality="100"
                   priority
                   alt="image"
-                />
+                /> */}
               </ImageWrapper>
             )}
         </Box>
