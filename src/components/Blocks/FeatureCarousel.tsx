@@ -263,14 +263,14 @@ export const FeatureCarousel = ({
                     objectFit="cover"
                     quality="100"
                     width={
-                      getImageAttributes(
+                      parseFloat(getImageAttributes(
                         block.feature_carousel_entry[activeIndex].image
-                      ).width
+                      ).width)
                     }
                     height={
-                      getImageAttributes(
+                      parseFloat(getImageAttributes(
                         block.feature_carousel_entry[activeIndex].image
-                      ).height
+                      ).height)
                     }
                     priority
                   />
