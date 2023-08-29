@@ -11,6 +11,7 @@ import NavbarMobile from '../../components/Shared/Navbar/NavbarMobile'
 import { styled } from '../../lib/style'
 
 import { useScrollToContent } from './utils'
+import Image from 'next/image'
 
 type HeroProps = {
   content: PageStoryblok['hero']
@@ -143,7 +144,7 @@ const Hero: React.FC<HeroProps> = ({
           {content[0].background_fallback &&
             content[0].background_fallback.filename && (
               <ImageWrapper>
-                <NextImage
+                <Image
                   {...getImageAttributes(content[0].background_fallback)}
                   objectFit="cover"
                   quality="100"
